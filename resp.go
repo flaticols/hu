@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func respJSON(w http.ResponseWriter, code int, data interface{}) error {
+func RespJSON(w http.ResponseWriter, code int, data interface{}) error {
 	w.Header().Set("Content-Type", "application/json")
 	payload, err := json.Marshal(data)
 	if err != nil {
@@ -21,10 +21,10 @@ func respJSON(w http.ResponseWriter, code int, data interface{}) error {
 	return nil
 }
 
-func resp(w http.ResponseWriter, code int) {
+func Resp(w http.ResponseWriter, code int) {
 	w.WriteHeader(code)
 }
 
-func respBad(w http.ResponseWriter, data interface{}) error {
-	return respJSON(w, http.StatusBadRequest, data)
+func RespBad(w http.ResponseWriter, data interface{}) error {
+	return RespJSON(w, http.StatusBadRequest, data)
 }
