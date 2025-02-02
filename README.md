@@ -16,8 +16,6 @@ To add hu to your project, you can simply use `go get`:
 go get github.com/flaticols/hu
 ```
 
-Replace "github.com/your-username/hu" with the actual repository URL.
-
 ## Usage
 
 Import the package in your Go application:
@@ -40,7 +38,7 @@ if err != nil {
 }
 ```
 
-This function sets a proper Content-Type header (application/json), marshals the data to JSON, sets the status code, and writes the response body.
+This function sets a proper Content-Type header (`application/json`), marshals the data to JSON, sets the status code, and writes the response body.
 
 ### Sending a Response without a body
 
