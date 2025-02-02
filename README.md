@@ -21,7 +21,7 @@ go get github.com/flaticols/hu
 Import the package in your Go application:
 
 ```go
-import "github.com/your-username/hu"
+import "github.com/flaticols/hu"
 ```
 
 ### Sending a JSON Response
